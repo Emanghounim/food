@@ -1,0 +1,265 @@
+/* .lode{
+  display: flex;
+  align-items: center;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+}
+body{
+    overflow: hidden;
+} */
+
+
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.alert{
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: absolute;
+  top:0;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(.1);
+  overflow: auto;
+  padding: 20px;
+  box-shadow: 0px 0px 214px 44px black;
+  visibility: hidden;
+  transition:transform 0.4s,top .4s;
+}
+.open{
+  top:50%;
+  transform: translate(-50%,-50%) scale(1);
+  visibility: visible;
+
+}
+.alert button{
+  position: sticky;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  color: #ffffff;
+  background: red;
+  font-size: larger;
+  cursor: pointer;
+  /* right: 100px; */
+  margin-left: 1230px;
+  top: 1px;
+
+
+}
+.alert #h2{
+  margin: 26px 0px 10px 0;
+}
+.alert #h2::after{
+  content: '-';
+}
+.alert #h2::before{
+  content: '-';
+}
+.alert #pragraph{
+  line-height: 1.5;
+  word-spacing: 3px;
+  padding: 20px;
+}
+#watch{
+   /* position: absolute; */
+  
+  margin-bottom: 19px;
+  background: red;
+  padding: 10px;
+  border-radius: 10px;
+  color: aliceblue;
+  text-decoration: none;
+  /* left: 42%; */
+  
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #0f0e0e;
+  margin: -4px 0 0 -4px;
+}
+
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#icona{
+  cursor: pointer;
+}
+
+nav {
+  flex-direction: column;
+  background-color: #0f0e0e;
+
+}
+
+.sideBar nav ul li {
+  list-style: none;
+  padding: 10px;
+}
+
+.sideBar nav ul li a {
+
+  text-decoration: none;
+
+  color: white;
+}
+
+.sideBar {
+  display: flex;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  z-index: 0.5555;
+  bottom: 0;
+}
+
+.sideBar .slider img {
+  width: 50px;
+
+  height: 50px;
+}
+
+.homeCategry{
+  background-color: blueviolet !important;
+  margin-top: 20px;
+width: 1200px;
+height: 100vh;
+margin-left:100px;
+
+}
+.layar{
+ background-color:rgba(0, 0, 0, 0.459) !important ;
+ display: none;
+  width: 320.75px;
+  height: 205.156px;
+  bottom: 0px;
+  z-index: 9999999;
+  left:0px;
+  color: white;
+  transition-delay: 1s;
+
+}
+.layar h1{
+  font-size:20px;
+  
+  text-align: center;
+}
+.col-md-4:hover .layar{
+display: block;
+}
+.home-meal img{
+  width: 295.75px;
+  height: 197.156px;
+}
+#submitBtn{
+cursor:pointer;
+
+}
+a{
+  text-decoration: none;
+}
+/* #rowSingle{
+  width: 100%;
+  height: 100vh;
+  background-color: #0f0e0e;
+
+} */
+
